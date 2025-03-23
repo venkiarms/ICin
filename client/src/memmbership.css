@@ -1,0 +1,83 @@
+.membership-page {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* left column for nav, right for main content */
+    gap: 10px;
+    height: 100vh; /* Use the full height of the viewport */
+  }
+  
+  .nav-bar {
+    background-color: #2c2c2c; /* Slightly lighter than the body for contrast */
+    padding: 20px;
+  }
+  
+    
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+    
+    .membership-options {
+      display: flex;
+      justify-content: center; /* Aligns children (buttons) horizontally center */
+      align-items: center;
+      background-image: url('./background.jpg');/* Adjust the path as necessary */
+      background-size: cover; /* Cover the entire container */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-position: center; /* Center the image in the container */
+    }
+    
+    .membership-button {
+      padding: 20px 40px; /* Increase padding to make buttons larger */
+      margin: 10px; /* Add some margin around buttons */
+      font-size: 1.2em; /* Increase font size for better readability */
+      cursor: pointer; /* Changes the cursor to a pointer on hover */
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s; /* Adds a transition for the hover state */
+      /* Add more styles as needed */
+    }
+    
+    .membership-button.free {
+      background-color: rgb(234, 6, 2); /* Example color for the free button */
+      color: rgb(6, 3, 3); /* Text color */
+    }
+    
+    .membership-button.premium {
+      background-color: #111010; /* Example color for the premium button */
+      color: rgb(213, 1, 1); /* Text color */
+    }
+    
+    
+    .membership-button:hover {
+      opacity: 0.9; /* Slight transparency on hover */
+      transform: scale(1.05); /* Slight increase in size on hover */
+    }
+    
+    .movies-watched {
+      background-color: #f2f2f2;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .rewards-button {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      background-color: #555;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .footer {
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
